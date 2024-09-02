@@ -1,0 +1,19 @@
+{
+  "name": "webdriverio-appium-v8",
+  "devDependencies": {
+    "@wdio/appium-service": "^8.39.1",
+    "@wdio/cli": "^8.39.1",
+    "@wdio/local-runner": "^8.39.1",
+    "@wdio/mocha-framework": "^8.39.0",
+    "@wdio/spec-reporter": "^8.39.0",
+    "appium": "^2.11.2",
+    "appium-uiautomator2-driver": "^3.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js",
+    "kill-appium": "node kill-appium.js",
+    "test": "npm run kill-appium && wdio run wdio.conf.js"
+  }
+}
